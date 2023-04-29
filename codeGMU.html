@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>codeGMU</title>
+
+    <style>
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(243, 212, 212);
+            background-image: url("/images/pinkleaf.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .coding,.below{
+            background: linear-gradient(
+                to right,
+                #5F72BE 0%,
+                #9921E8 100%
+
+            );
+        }
+        .box {
+            background: linear-gradient(
+                to right,
+                #5F0A87 0%,
+                #A4508B 100%
+            );
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.2);
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="elm absolute -z-10">
+        <img src="/images/newbg.png" alt="wave">
+    </div>
+    <nav class="py-4">
+        <ul class="text-white space-x-14 overflow-hidden px-4 bg-opacity-0">
+            <div class="float-left text-lg font-bold flex justify-center items-center ml-11">
+                <img src="/images/logo.png" alt="logo" class="h-9"> 
+                <li class="float-left text-lg font-bold">codeGMU</li>
+                
+            </div>
+            <button class="float-right rounded-md w-24 border border-1">LogIn</button>
+            <li class="float-right hover:cursor-pointer hover:text-orange-500">About Us</li>
+            <li class="float-right hover:cursor-pointer hover:text-orange-500">Placement</li>
+            <li class="float-right hover:cursor-pointer hover:text-orange-500">Faculty</li>
+            <li class="float-right hover:cursor-pointer hover:text-orange-500">Department</li>
+            <li class="float-right hover:cursor-pointer hover:text-orange-500">University</li>
+        </ul>
+    </nav>
+
+    <div class="parent flex">
+        <div class="left flex flex-col justify-center text-white ml-16">
+            <h1 class="text-4xl font-bold">Welcome to <span class="text-orange-500">codeGmu</span> website Here Your
+                find more <span class="text-orange-500">knowledge</span></h1><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam magnam, dolores architecto nemo,
+                optio accusantium nostrum, doloremque odio atque ipsum enim reprehenderit <br>
+                aut incidunt voluptas dolorum modi quasi molestiae distinctio?</p><br>
+            <button class="btn rounded-md p-3 w-40 bg-orange-500 hover:bg-orange-400 font-bold">Get Started --></button>
+        </div>
+        <div class="right">
+            <img src="/images/girl gif.gif" alt="right gift">
+        </div>
+    </div>
+
+    <div class="content px-28 mt-10">
+        <div class="heading text-center">
+            <h2 class="text-2xl font-bold text-orange-600">For Students</h2>
+            <h3 class="font-bold">Do you search for PYQs Syllabus Books or Notes ?</h3>
+        </div>
+        <div class="couese flex justify-around py-5 mt-3">
+            <div class="box w-52 h-52 flex flex-col justify-center items-center bg-[#1947ae] text-white rounded-md">
+                <img src="/images/pyq.png" alt="PYQs" class="h-8">
+                <span>PYQs</span>
+            </div>
+            <div class="box w-52 h-52  flex flex-col justify-center items-center bg-[#1947ae] text-white rounded-md">
+                <img src="/images/syllabus.png" alt="Syllabus" class="h-8">
+                <span>Syllabus</span>
+            </div>
+            <div class="box w-52 h-52  flex flex-col justify-center items-center bg-[#1947ae] text-white rounded-md">
+                <img src="/images/book.png" alt="Books" class="h-8">
+                <span>Books</span>
+            </div>
+            <div class="box w-52 h-52  flex flex-col justify-center items-center bg-[#1947ae] text-white rounded-md">
+                <img src="/images/note.png" alt="Notes" class="h-8">
+                <span>Notes</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="coding flex mt-8 h-[200px] bg-blue-300 rounded-br-full rounded-tl-full">
+        <div class="codleft flex justify-center items-center w-1/2">
+            <img src="/images/girl coding.gif" alt="Girl Coder" class="">
+        </div>
+        <div class="coderight text-left flex justify-center items-center ml-32 w-[300px]">
+            <h1 class="text-2xl font-bold text-white">Welcome to the Assignment section where you can see all Assignment and Algorithm</h1>
+        </div>
+    </div>
+    <div class="below rounded-bl-full rounded-tr-full h-[200px]">
+
+    </div>
+    <br><br><br><br><br><br><br>
+</body>
+</html>
