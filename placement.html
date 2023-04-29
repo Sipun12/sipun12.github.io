@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Placement-codeGMU</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .spikes {
+            position: relative;
+            background: #16409e;
+        }
+
+        .spikes::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            left: -0%;
+            top: 100%;
+            z-index: 10;
+            display: block;
+            height: 50px;
+            background-size: 50px 100%;
+            background-image: linear-gradient(135deg, #16409e 25%, transparent 25%), linear-gradient(225deg, #01305d 25%, transparent 25%);
+            background-position: 0 0;
+        }
+
+        .changeopen {
+            animation: open .7s ease-in-out;
+        }
+
+        @keyframes open {
+            0% {
+                transform: translateX(250px);
+            }
+        }
+
+        .changeclose {
+            animation: close 1s ease-in-out;
+        }
+
+        @keyframes close {
+            100% {
+                transform: translateX(1700px);
+            }
+        }
+
+        body {
+            background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+            background-repeat: no-repeat;
+        }
+
+        .achiever {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: 0.4s;
+        }
+
+        .achiever:hover {
+            transform: scale(1.04);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+        }
+
+        .links a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+
+        .contact a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+
+        .jobs::-webkit-scrollbar {
+            display: none;
+        }
+          /* Dropdown */
+    .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  /* background-color: red; */
+  color: #F97316;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F97316;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #16409E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+    <nav class="navbar text-sm text-white bg-[#16409E]">
+        <div class="flex justify-between items-center pt-1 pl-3 md:hidden">
+            <div class="logo flex text-lg">
+                <img src="/images/logo.png" alt="Logo" class="h-7">
+                <div class="font-bold"><a href="index.html">codeGMU</a></div>
+            </div>
+            <div class="bars block lg:hidden float-right pr-3 z-10 md:hidden" name="manu" id="sideicon">
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            </div>
+        </div>
+        <div class="mainav hidden md:block px-3">
+            <ul class="text-white space-x-10 overflow-hidden px-4 bg-opacity-0 font-bold lg:text-lg">
+                <div class="float-left text-lg font-bold flex justify-center items-center lg:mt-2 lg:ml-12">
+                    <img src="/images/logo.png" alt="logo" class="h-9">
+                    <li class="float-left text-lg font-bold">codeGMU</li>
+
+                </div>
+                <div class="lis py-2 space-x-7">
+                    <li class="float-right hover:cursor-pointer text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
+                        <div class="dropdown">
+                            <button class="dropbtn lg:mt-2">Outreach Activity 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="mentormentee.html">Mentor Mentee</a>
+                              <a href="seminar.html">Seminar</a>
+                              <a href="webinar.html">Webinar</a>
+                              <a href="ptm.html">Parent Teacher Meeting</a>
+                            </div>
+                          </div> 
+                    </li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html"> University</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="index.html"> Home</a></li>
+
+                </div>
+            </ul>
+        </div>
+        <ul class="bg-[#1545B3] font-bold right-1 top-1 w-60 hidden float-right z-40 absolute rounded-md" id="sidebar">
+            <div class="flex justify-between">
+                <li class="text-xs p-2 "><a href="index.html">Home</a></li>
+                <img src="/images/crossicon.png" alt="cross icon" class="h-4 m-2" id="cross">
+            </div>
+            <hr>
+            <li class="text-xs p-2 "><a href="university.html">University</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="faculty.html">Faculty</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="alumniregistration.php">Alumni Connect</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+
+        </ul>
+    </nav>
+
+
+    <header class="">
+        <section class="spikes max-h-[65vh] sm:max-h-[85vh] md:max-h-[50vh] lg:max-h-[70vh] xl:h-[87vh]">
+            <div
+                class="firstcontainer flex flex-col-reverse justify-center items-center px-2 sm:px-4 md:flex-row lg:mb-40">
+                <div class="firstleft pt-4 text-left md:w-2/3 text-white lg:ml-16">
+                    <h1 class="font-bold text-lg sm:text-2xl md:-mt-7 lg:mt-0 lg:text-4xl"><span
+                            class="text-orange-500">Placement Section</span></h1>
+                    <p class="text-2xl">Get details about the placements of Computer Science department</p>
+                </div>
+                <div class="firstright flex justify-center items-center lg:pr-20">
+                    <img src="/images/smallback2.gif" alt="firstillustration" class="h-44 sm:h-72 md:h-80 lg:h-96">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <div class="mx-4 mt-28 flex flex-col lg:flex-row lg:justify-between lg:space-x-10 lg:mx-10 xl:mx-32">
+            <div class="information ">
+                <div class="border-l-[15px] border-l-[#003e78] flex items-start">
+                    <div class="text-xl font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 sm:text-2xl">
+                        <h2 class="ml-2">About Placement Cell</h2>
+                    </div>
+                </div>
+                <p class="py-3 leading-8 text-justify">The placement cell of a college is a crucial department that facilitates the employment of students. The primary objective of the placement cell is to provide students with opportunities to get placed in companies according to their interests and qualifications. The cell acts as an intermediary between the students and the corporate world, creating a bridge for recruitment. It also arranges career guidance, workshops, and training sessions to improve students' soft and technical skills. The placement cell builds a database of students' resumes, which it shares with companies looking to recruit. With its persistent efforts, the placement cell plays a significant role in enhancing the employability of students and building a successful career.</p>
+
+                <div class="border-l-[15px] border-l-[#003e78] flex items-start">
+                    <div class="text-xl font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 sm:text-2xl">
+                        <h2 class="ml-2">Traning and Placement Prelude</h2>
+                    </div>
+                </div>
+                <p class="py-3 leading-8 text-justify">The Training and Placement Cell has been established to act as a
+                    catalyst for the students in providing various facilities that support career decision making,
+                    exploring a diverse range of career opportunities and developing confidence and skills to choose the
+                    right career. The Placement Cell publicizes information about employment opportunities and arranges
+                    per-placement talks, written tests, group discussions, interviews etc. It provides employment
+                    opportunities through campus placements. The training and placement cell is committed to providing
+                    all possible assistance to the students in their efforts to find employment.</p>
+
+                    <div class="border-l-[15px] border-l-[#003e78] flex items-start">
+                        <div class="text-xl font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 sm:text-2xl">
+                            <h2 class="ml-2">Traning and Placement Contacts</h2>
+                        </div>
+                    </div>
+                    <p class="py-3 leading-8 text-justify"> <b> Prof. Susanta Kumar Das </b><br>
+                        Coordinator <br>
+                        Gangadhar Meher University <br>
+                        Sambalpur - 768004 <br>
+                        +91-9658039777 <br>
+                        skdas@gmuniversity.ac.in & placement@gmuniversity.ac.in</p>
+
+                    <p class="py-3 leading-8 text-justify"> <b> Amit Ku Hota </b><br>
+                        Dealing Assistant <br>
+                        Gangadhar Meher University <br>
+                        Sambalpur - 768004 <br>
+                        amithota87@gmail.com</p>
+            </div>
+            <div class="links">
+                <div class="bg-pink-200 p-4 rounded-md">
+                    <div class="w-80 border-l-[15px] border-l-[#003e78] flex items-start">
+                        <div class="text-xl font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 sm:text-2xl">
+                            <h2 class="ml-2">Quick Job Links</h2>
+                        </div>
+                    </div>
+                    <ul class="jobs mt-4 h-[500px] xl:h-[450px] overflow-y-scroll">
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+                        <li class="p-3 my-1.5 bg-blue-500 rounded-md"><a href=""> Wipro Step Asseptment</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="mx-6 xl:mx-0">
+            <div class="mb-6  border-l-[15px] border-l-[#003e78] flex items-start lg:mx-5 xl:mx-32">
+                <div class="text-xl font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 sm:text-2xl">
+                    <h2 class="ml-2">Job Seeker</h2>
+                </div>
+            </div>
+            <div
+                class="jobseeker lg:mx-32 my-36 flex flex-col items-center lg:flex-row space-y-20 lg:justify-center lg:space-y-0 lg:space-x-5 xl:space-x-9">
+
+                <div
+                    class="achiever w-80 bg-gray-100 flex flex-col items-center rounded-tr-[100px] rounded-bl-[100px] rounded-tl-sm rounded-br-sm sm:w-96 md:w-[550px] xl:w-[700px]">
+                    <div
+                        class="photo w-36 h-36 bg-pink-300 border-8 border-gray-100 overflow-hidden rounded-full -mt-16">
+                        <img class="p-2" src="/images/girl.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="about px-12 py-8 pt-6 leading-7 sm:leading-[37px]">
+                            <h3 class="font-bold text-xl text-center text-green-500 mb-4">Dr. Rakesh Sharma</h3>
+                            <p><span class="font-bold">Company : </span>Google</p>
+                            <p><span class="font-bold">Job Description : </span>Web Devloper</p>
+                            <p><span class="font-bold">Designation : </span>ASSOCIATE PROFESSOR</p>
+                            <p><span class="font-bold">Qualification : </span> M.Sc. (Computer Science), Ph. D.
+                                (Computer Science)</p>
+                            <p><span class="font-bold">Phone No : </span>8260522156</p>
+                            <p><span class="font-bold">Email Id : </span>mpanda@gmuniversity.ac.in, mpanda.gmu@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="achiever w-80 bg-gray-100 flex flex-col items-center rounded-tr-[100px] rounded-bl-[100px] rounded-tl-sm rounded-br-sm sm:w-96 md:w-[550px] xl:w-[700px]">
+                    <div
+                        class="photo w-36 h-36 bg-pink-300 border-8 border-gray-100 overflow-hidden rounded-full -mt-16">
+                        <img class="p-2" src="/images/girl.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="about px-12 pt-6 py-8 leading-7 sm:leading-[37px]">
+                            <h3 class="font-bold text-xl text-center text-green-500 mb-4">Dr. Rakesh Sharma</h3>
+                            <p><span class="font-bold">Company : </span>Google</p>
+                            <p><span class="font-bold">Job Description : </span>Web Devloper</p>
+                            <p><span class="font-bold">Designation : </span>ASSOCIATE PROFESSOR</p>
+                            <p><span class="font-bold">Qualification : </span> M.Sc. (Computer Science), Ph. D.
+                                (Computer Science)</p>
+                            <p><span class="font-bold">Phone No : </span>8260522156</p>
+                            <p><span class="font-bold">Email Id : </span>mpanda@gmuniversity.ac.in, mpanda.gmu@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="achiever w-80 bg-gray-100 flex flex-col items-center rounded-tr-[100px] rounded-bl-[100px] rounded-tl-sm rounded-br-sm sm:w-96 md:w-[550px] xl:w-[700px]">
+                    <div
+                        class="photo w-36 h-36 bg-pink-300 border-8 border-gray-100 overflow-hidden rounded-full -mt-16">
+                        <img class="p-2" src="/images/girl.png" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="about px-12 pt-6 py-8 leading-7 sm:leading-[37px]">
+                            <h3 class="font-bold text-xl text-center text-green-500 mb-4">Dr. Rakesh Sharma</h3>
+                            <p><span class="font-bold">Company : </span>Google</p>
+                            <p><span class="font-bold">Job Description : </span>Web Devloper</p>
+                            <p><span class="font-bold">Designation : </span>ASSOCIATE PROFESSOR</p>
+                            <p><span class="font-bold">Qualification : </span> M.Sc. (Computer Science), Ph. D.
+                                (Computer Science)</p>
+                            <p><span class="font-bold">Phone No : </span>8260522156</p>
+                            <p><span class="font-bold">Email Id : </span>mpanda@gmuniversity.ac.in, mpanda.gmu@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
+        <div class="foot py-5 px-1">
+            Gangadhar Meher University, Amruta Vihar, Sambalpur, Odisha, Pin- 768004
+        </div>
+        <hr>
+        <div class="flex justify-around">
+            <div class="logo flex my-5 justify-start">
+                <img src="/images/logo.png" alt="Logo" class="h-6 sm:h-10">
+                <div class="font-bold text-base sm:text-2xl">codeGMU</div>
+            </div>
+            <div class="links text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 text-base sm:text-lg pb-5 text-orange-500">QUICK LINKS
+                </h3>
+                <a href="university.html"> University</a><br>
+                <!-- <a href=""> Department</a><br> -->
+                <a href="faculty.html"> Faculty</a><br>
+                <a href="placement.html"> Placement</a><br>
+                <a href="alumniregistration.php"> Alumni Registration</a><br>
+            </div>
+            <div class="contact text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL LINKS
+                </h3>
+                <a href="https://exam.gmuniversity.ac.in/"> Examination Website</a><br>
+                <a href="http://result.gmuniversity.ac.in/"> Result Website</a><br>
+                <a href="https://www.gmuniversity.ac.in"> Official GMU Website</a><br>
+                <a href="mailto: gmuniversitysbp@gmail.com"> Mail to University</a><br>
+            </div>
+        </div>
+        <hr>
+        <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
+            <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10" src="/images/youtube.png" alt="Youtube icon"></a>
+            <a href="https://twitter.com/gmunivsbp"><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
+        </div>
+        </div>
+        <hr>
+        <div class="protection py-4 ">
+            <a href="">© 2023 GM University, All Rights Reserved</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("sideicon").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("hidden");
+            document.getElementById("sidebar").classList.add("changeopen");
+            document.getElementById("sideicon").style.display = "none";
+        });
+
+        document.getElementById("cross").addEventListener("click", function () {
+            //document.getElementById("sidebar").classList.remove("changeopen");
+            document.getElementById("sidebar").classList.add("changeclose");
+            setTimeout(() => {
+                document.getElementById("sidebar").classList.add("hidden");
+                document.getElementById("sidebar").classList.remove("changeopen");
+                document.getElementById("sidebar").classList.remove("changeclose");
+                document.getElementById("sideicon").style.display = "block";
+                document.body.style.opacity = "1";
+            }, 990);
+
+        });
+    </script>
+</body>
+
+</html>

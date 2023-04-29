@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeGMU-Gangadhar Meher University,Sambalpur</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+        body {
+            background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+        }
+
+        .person-text {
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            ;
+            border-radius: 10px;
+        }
+
+        .clgintro {
+            font-family: 'Bebas Neue', cursive;
+        }
+
+        .clgdesc {
+            border-radius: 10px;
+            font-family: 'Proza Libre', sans-serif;
+        }
+
+        .links a::before {
+        content: '\f046';
+        color: orange;
+        padding: 10px 0px;
+    }
+
+    .contact a::before {
+        content: '\f046';
+        color: orange;
+        padding: 10px 0px;
+    }
+
+           /* Dropdown */
+    .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  /* background-color: red; */
+  color: #F97316;
+}
+
+.dropdown-content {
+  z-index: 90;
+  display: none;
+  position: absolute;
+  background-color: #F97316;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #16409E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar text-sm text-white bg-blue-600">
+        <div class="flex justify-between items-center pt-1 pl-3 md:hidden">
+            <div class="logo flex text-lg">
+                <img src="/images/logo.png" alt="Logo" class="h-7">
+                <div class="font-bold"><a href="index.html">codeGMU</a></div>
+            </div>
+            <div class="bars block lg:hidden float-right pr-3 z-10 md:hidden" name="manu" id="sideicon">
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            </div>
+        </div>
+        <div class="mainav hidden md:block px-3">
+            <ul class="text-white space-x-10 overflow-hidden px-4 bg-opacity-0 font-bold lg:text-lg">
+                <div class="float-left text-lg font-bold flex justify-center items-center lg:mt-2 lg:ml-12">
+                    <img src="/images/logo.png" alt="logo" class="h-9">
+                    <li class="float-left text-lg font-bold">codeGMU</li>
+
+                </div>
+                <div class="lis py-2 space-x-7">
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
+                        <div class="dropdown">
+                            <button class="dropbtn lg:mt-2">Outreach Activity 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="mentormentee.html">Mentor Mentee</a>
+                              <a href="seminar.html">Seminar</a>
+                          <a href="webinar.html">Webinar</a>
+                              <a href="ptm.html">Parent Teacher Meeting</a>
+                            </div>
+                          </div> 
+                    </li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
+                    <li class="float-right hover:cursor-pointer text-orange-500 px-2"><a href="university.html"> University</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="index.html"> Home</a></li>
+
+                </div>
+            </ul>
+        </div>
+        <ul class="bg-[#1545B3] font-bold right-1 top-1 w-60 hidden float-right z-40 absolute rounded-md" id="sidebar">
+            <div class="flex justify-between">
+                <li class="text-xs p-2 "><a href="index.html">Home</a></li>
+                <img src="/images/crossicon.png" alt="cross icon" class="h-4 m-2" id="cross">
+            </div>
+            <hr>
+            <li class="text-xs p-2 "><a href="university.html">University</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="faculty.html">Faculty</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="alumniregistration.php">Alumni Connect</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- CAROUSEL -->
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="gmu1.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="gmu2.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="gmu3.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="gmu4.jpeg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img src="gmu5.jpg" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="...">
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+                class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+
+    <!-- COLLEGE INTRO -->
+    <div class="">
+        <p class=" text-center text-5xl text-bold clgintro mt-3">Gangadhar Meher University <br> Sambalpur, Odisha</p>
+        <h1 class="clgintro ml-7 mt-5 text-2xl "> <u>About University</u></h1>
+        <div class="clgdesc ml-6 mr-6 flex items-center justify-center bg-gray-900">
+            <p class="p-2 text-white">Gangadhar Meher University (GMU), Sambalpur came into existence on the 30th May
+                2015 as a unitary institution of higher learning [The Government of Odisha Order No.11598/HE Dated
+                30.05.2015]. That was a momentous event for the people and student community of the Western Odisha for
+                the fulfillment of their long cherished dream and aspirations. The newly formed University replaced the
+                erstwhile Gangadhar Meher College (Autonomous). Consequently, the entire teaching and nonteaching staff
+                of the G.M. College were deployed to G.M. University and became the stakeholders of the newly formed
+                GMU. This transition was indeed the crowning glory for an institution that had a humble beginning at its
+                inception way back in the pre-independence era.
+
+                Gangadhar Meher College, one of the oldest and the largest in Odisha, owes its origin in 1944 to the
+                strong initiative, determination and tireless efforts of the people, including intellectuals and
+                academicians, of Sambalpur and their intense yearning for quality education. Initially known as
+                Sambalpur College, it was later renamed in 1949 as Gangadhar Meher College after Gangadhar Meher, a
+                renowned Odia poet and a worthy son of the soil. The College started on a modest scale with the student
+                strength of only 192. It went on expanding and growing in stature with the passage of time. In 1944,
+                degree programs in Arts and Commerce were introduced, while B.Sc. programs were added in the year 1957.
+                The College reached a milestone in 1964 when Post-graduate departments were opened. Another landmark was
+                achieved when M.Phil. programs in various disciplines were offered by the institution from 1983 onwards.
+                Pre-Doctoral coursework was also introduced in 2012 in four subjects to meet the demand for higher
+                education and research. From this year (2018) the GMU started offering Ph.D. programs in many subjects.
+                The primary mission of the institution was to cater to the needs of the poor and underprivileged
+                students of this tribal-dominated region of the State. The institution performed the role with great
+                distinction in the subsequent years. It made rapid strides to emerge as a premier institution of the
+                State in the domain of higher education culminating in its elevation to the status of a Unitary
+                University. The College was able to carve out a special niche for itself in the academic landscape of
+                Odisha. It started functioning as an autonomous college in 1991 and was controlled and managed by the
+                statutory and the non-statutory bodies as prescribed by the UGC. On the basis of its academic reputation
+                and its quality of institutional management and responsive administrative structure, the autonomy of
+                this institution was extended by the UGC. Further, the institution was identified as the “College with
+                potential for excellence (CPE)” by the UGC in the session 2004-05. The institution added another feather
+                in its cap when it was accredited by the NAAC with an “A” grade in the session 2015-16 in recognition of
+                its excellent performance.
+
+                The newly instituted G.M. University has taken on the mantle from G.M. College (Autonomous) and is
+                poised to take off to new heights of excellence in the academic firmament in the years ahead. The new
+                entity started functioning from 30.05.2015 after its new incarnation. Prof. Sudhansu Sekhar Ratha, an
+                eminent professor of Economics and a noted economist from Sambalpur University was appointed as the OSD,
+                while Dr. Smita Devi, Reader in English and Principal of the erstwhile (Autonomous) College was deputed
+                as the acting Registrar to oversee the administration of the University. On 27th April 2015, Prof. Ratha
+                was officially designated as the first Vice-Chancellor of the G.M. University.</p>
+        </div>
+    </div>
+
+
+    <!-- PERSONS -->
+    <div class="mt-6 flex flex-col lg:flex-row bg-[#01305d] px-6  py-3 m-3 rounded-lg">
+        <div class=" flex items-center justify-center md:flex md:items-center md:justify-center sm:flex sm:items-center sm:justify-center overflow-hidden">
+            <img class="mr-6 ml-6 h-auto max-w-md rounded-lg  lg:ml-5" src="gangadharmeher2.jpg" alt="image description">
+        </div>
+        <div class="text-left text-white lg:pl-10 lg:ml-10">
+            <h1 class="text-center font-bold text-2xl ">Gangadhar Meher</h1>
+            <p class="font-semibold p-3">The University is named after the poet of Western Odisha , Swabhiman Kabi Gangadhar Meher .
+                <br>
+                Gangadhar Meher University (GMU), Sambalpur came into existence on the 30th May 2015 as a unitary institution of higher learning [The Government of Odisha Order No.11598/HE Dated 30.05.2015]. That was a momentous event for the people and student community of the Western Odisha. 
+                
+            </p>
+        </div>
+    </div>
+    <!-- VC -->
+    <div class="mt-6 flex flex-col lg:flex-row bg-[#01305d] px-6  py-3 m-3 rounded-lg">
+        <div class=" flex items-center justify-center md:flex md:items-center md:justify-center sm:flex sm:items-center sm:justify-center">
+            <img class="mr-6 ml-6 h-auto max-w-sm rounded-lg  lg:ml-5" src="gmuvc.jpg" alt="image description">
+        </div>
+        <div class="text-left text-white lg:pl-10 lg:ml-10">
+            <h1 class="text-center font-bold text-2xl ">Meet The VC <br> Prof. N. Nagaraju</h1>
+            <p class="font-semibold p-3">Born before the magical midnight, 'Swabhiman' woven into its embodied
+                growth, on
+                the bank of tethered might of a River, at the edge of mystical sunyavad, this institution, as the
+                institutions ought to, speaks to several generations of men and women of all hues, all the children of
+                the eternal mother. At the crossroads of an old pristine land and an ambitious modern state, it has in
+                its folds not just the nascent decades of post independent India but the eager and aspirational youth of
+                the new millennial Odisha. It hence ought to look at us with cosmopolitan colours and an immediate
+                riverine earthiness. From stages and shapes of Becoming to a vibrating, yet still, Being. Degrees after
+                degrees are but stages of life reminding responsibilities and needs to be met. Life evolves and is
+                realised through these stages towards a self of ultimate liberation. Gangadhar Meher University is a
+                witness, if not active and wise participant, to the noble and altruistic act of liberation. Alumni and
+                all the stakeholders may look at its breadth for whatever they want it to be, and from it.
+                
+            </p>
+        </div>
+    </div>
+
+
+    <!-- HOD MAM -->
+    <div class="mt-6 flex flex-col lg:flex-row bg-[#01305d] px-6  py-3 m-3 rounded-lg">
+        <div class=" flex items-center justify-center md:flex md:items-center md:justify-center sm:flex sm:items-center sm:justify-center">
+            <img class="mr-6 ml-6 h-[250px] w-[800px] rounded-lg  lg:ml-5" src="hodcs.jpg" alt="image description">
+        </div>
+        <div class="text-left text-white lg:pl-10 lg:ml-10">
+            <h1 class="text-center font-bold text-2xl ">Meet Our HOD  <br> Dr. Madhumita Panda</h1>
+            <p class="font-semibold p-3">In view of increasing importance of the information technology, the School of Computer Science was established in 1998 under the aegis of School of Physics. The School got its own identity in 2017. The School consists of U.G. and P.G. courses with student strength of 36 and 16 respectively. The School follows the UGC prescribed CBCS syllabus for the courses. The courses are designed to emphasize the practical aspect of the subjects, to make students ready for industry.
+                There are two well configured computer laboratories for the students. A well-equipped seminar library with over thousand books caters the needs of the students and staffs.
+                The School organizes seminars, invited talks of experts from industry and academia to bridge the gap between the theory and current practices in industries.
+                The School works to produce computer science graduates with sound knowledge and skills to address current professional challenges.
+                
+            </p>
+        </div>
+    </div>
+
+    
+
+
+    <!-- FOOTER -->
+    <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
+        <div class="foot py-5 px-1">
+            Gangadhar Meher University, Amruta Vihar, Sambalpur, Odisha, Pin- 768004
+        </div>
+        <hr>
+        <div class="flex justify-around">
+            <div class="logo flex my-5 justify-start">
+                <img src="/images/logo.png" alt="Logo" class="h-6 sm:h-10">
+                <div class="font-bold text-base sm:text-2xl">codeGMU</div>
+            </div>
+            <div class="links text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 text-base sm:text-lg pb-5 text-orange-500">QUICK LINKS
+                </h3>
+                <a href="university.html"> University</a><br>
+                <!-- <a href=""> Department</a><br> -->
+                <a href="faculty.html"> Faculty</a><br>
+                <a href="placement.html"> Placement</a><br>
+                <a href="alumniregistration.php"> Alumni Registration</a><br>
+            </div>
+            <div class="contact text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL LINKS
+                </h3>
+                <a href="https://exam.gmuniversity.ac.in/"> Examination Website</a><br>
+                <a href="http://result.gmuniversity.ac.in/"> Result Website</a><br>
+                <a href="https://www.gmuniversity.ac.in"> Official GMU Website</a><br>
+                <a href="mailto: gmuniversitysbp@gmail.com"> Mail to University</a><br>
+            </div>
+        </div>
+        <hr>
+        <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
+            <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10" src="/images/youtube.png" alt="Youtube icon"></a>
+            <a href="https://twitter.com/gmunivsbp"><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
+        </div>
+        <hr>
+        <div class="protection py-4 ">
+            <a href="">© 2023 GM University, All Rights Reserved</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("sideicon").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("hidden");
+            document.getElementById("sidebar").classList.add("changeopen");
+            document.getElementById("sideicon").style.display = "none";
+        });
+
+        document.getElementById("cross").addEventListener("click", function () {
+            //document.getElementById("sidebar").classList.remove("changeopen");
+            document.getElementById("sidebar").classList.add("changeclose");
+            setTimeout(() => {
+                document.getElementById("sidebar").classList.add("hidden");
+                document.getElementById("sidebar").classList.remove("changeopen");
+                document.getElementById("sidebar").classList.remove("changeclose");
+                document.getElementById("sideicon").style.display = "block";
+                document.body.style.opacity = "1";
+            }, 990);
+
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>

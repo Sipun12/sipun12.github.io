@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>UG and PG</title>
+</head>
+<style>
+    *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .changeopen {
+            animation: open .7s ease-in-out;
+        }
+
+        @keyframes open {
+            0% {
+                transform: translateX(250px);
+            }
+        }
+        .changeclose {
+            animation: close 1s ease-in-out;
+        }
+
+        @keyframes close {
+            100% {
+                transform: translateX(1700px);
+            }
+        }
+        body {
+            background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+            background-repeat: no-repeat;
+        }
+        .links a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+
+        .contact a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+        .ug, .pg{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            transition: 0.4s;
+        }
+        .ug:hover, .pg:hover{
+            transform: scale(1.04);
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            
+        }
+           /* Dropdown */
+    .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  /* background-color: red; */
+  color: #F97316;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F97316;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #16409E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+<body>
+    <nav class="navbar text-sm text-white bg-[#01305D]">
+        <div class="flex justify-between items-center pt-1 pl-3 md:hidden">
+            <div class="logo flex text-lg">
+                <img src="/images/logo.png" alt="Logo" class="h-7">
+                <div class="font-bold">codeGMU</div>
+            </div>
+            <div class="bars block lg:hidden float-right pr-3 z-10 md:hidden" name="manu" id="sideicon">
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            </div>
+        </div>
+        <div class="mainav hidden md:block px-3">
+            <ul class="text-white space-x-10 overflow-hidden px-4 bg-opacity-0 font-bold lg:text-lg">
+                <div class="float-left text-lg font-bold flex justify-center items-center lg:mt-2 lg:ml-12">
+                    <img src="/images/logo.png" alt="logo" class="h-9">
+                    <li class="float-left text-lg font-bold">codeGMU</li>
+
+                </div>
+                <div class="lis py-2 space-x-7">
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
+                        <div class="dropdown">
+                            <button class="dropbtn lg:mt-2">Outreach Activity 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="mentormentee.html">Mentor Mentee</a>
+                              <a href="seminar.html">Seminar</a>
+                              <a href="webinar.html">Webinar</a>
+                              <a href="ptm.html">Parent Teacher Meeting</a>
+                            </div>
+                          </div> 
+                    </li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html"> University</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="index.html"> Home</a></li>
+
+                </div>
+            </ul>
+        </div>
+        <ul class="bg-[#1545B3] font-bold right-1 top-1 w-60 hidden float-right z-40 absolute rounded-md" id="sidebar">
+            <div class="flex justify-between">
+                <li class="text-xs p-2 "><a href="index.html">Home</a></li>
+                <img src="/images/crossicon.png" alt="cross icon" class="h-4 m-2" id="cross">
+            </div>
+            <hr>
+            <li class="text-xs p-2 "><a href="university.html">University</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="faculty.html">Faculty</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="alumniregistration.php">Alumni Connect</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+
+        </ul>
+    </nav>
+    <header class="bg-[#01305D] h-[270px]">
+        <div class="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+            <!-- <div class="lg:max-w-lg lg:w-full md:w-1/2 w-3/6 md:mb-0 mb-10">
+                 <video src="bookshelf-4894833-4138933.webm" autoplay muted loop></video>
+                <img src="ugpgheroimage.jpg" alt="ugpg">
+            </div> -->
+            <div
+                class=" mt-32 lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                <h1 class="title-font sm:text-4xl lg:text-7xl lg:ml-96 mb-4 font-medium text-orange-500">Select UG or PG
+                </h1>
+
+            </div>
+        </div>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200"><path fill="#01305D" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,138.7C384,160,480,192,576,186.7C672,181,768,139,864,101.3C960,64,1056,32,1152,42.7C1248,53,1344,107,1392,133.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <main>
+        <div class="items flex flex-col mx-8 sm:mx-28 md:mx-12 lg:mx-28 xl:mx-40">
+            <div class="my-16 border-l-[15px] border-l-[#003e78] flex items-start xl:ml-32">
+                <div class="font-bold ml-1 text-[#003e78] border-l-8 border-orange-500 text-2xl"><h2 class="ml-2">UG and PG</h2></div>
+            </div>
+            <div class="degree flex flex-col mb-12 items-center space-y-8 md:space-y-0 md:justify-around md:flex-row md:mx-8 md:space-x-4 lg:space-x-8 xl:space-x-12 xl:mx-32">
+                <div class="ug max-h-[630px] w-80 sm:w-96 md:w-[350px] bg-gray-100 p-3 rounded-md">
+                    <div class="flex justify-center bg-pink-300 rounded-md"><img src="/images/graduateboy2.png" alt=""></div>
+                    <div class="pt-3"><h2 class="text-green-500 text-center text-xl font-bold">UG</h2></div>
+                    <div class="py-3"><p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate autem fuga suscipit soluta quasi similique blanditiis, odio omnis mollitia earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam dolor error quis, quam eaque explicabo autem voluptatem dolores debitis.</p></div>
+                    <div class="flex justify-center"><button class="py-3 w-[100%] text-white font-bold bg-green-500 rounded-md">Visit UG</button></div>
+                </div>
+                <div class="pg max-h-[630px] w-80 sm:w-96 md:w-[350px] bg-gray-100 p-3 rounded-md">
+                    <div class="flex justify-center bg-pink-300 pb-6 rounded-md"><img src="/images/graduategirl2.png" alt=""></div>
+                    <div class="pt-3"><h2 class="text-green-500 text-center text-xl font-bold">PG</h2></div>
+                    <div class="py-3"><p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate autem fuga suscipit soluta quasi similique blanditiis, odio omnis mollitia earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam dolor error quis, quam eaque explicabo autem voluptatem dolores debitis.</p></div>
+                    <div class="flex justify-center"><button class="py-3 w-[100%] text-white font-bold bg-green-500 rounded-md">Visit PG</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
+        <div class="foot py-5 px-1">
+            Gangadhar Meher University, Amruta Vihar, Sambalpur, Odisha, Pin- 768004
+        </div>
+        <hr>
+        <div class="flex justify-around">
+            <div class="logo flex my-5 justify-start">
+                <img src="/images/logo.png" alt="Logo" class="h-6 sm:h-10">
+                <div class="font-bold text-base sm:text-2xl">codeGMU</div>
+            </div>
+            <div class="links text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 text-base sm:text-lg pb-5 text-orange-500">QUICK LINKS
+                </h3>
+                <a href=""> University</a><br>
+                <a href=""> Department</a><br>
+                <a href=""> Faculty</a><br>
+                <a href=""> Placement</a><br>
+                <a href=""> About Us</a><br>
+            </div>
+            <div class="contact text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">CONTACTS
+                </h3>
+                <a href=""> Sambalpur,Odisha</a><br>
+                <a href=""> Email</a><br>
+                <a href=""> +91-663-2403413</a><br>
+                <a href=""> +91-663-2400970</a><br>
+            </div>
+        </div>
+        <hr>
+        <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
+            <a href=""><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
+            <a href=""><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
+            <a href=""><img class="h-10" src="/images/linkedin.png" alt="linkedin icoon"></a>
+            <a href=""><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
+        </div>
+        <hr>
+        <div class="protection py-4 ">
+            <a href="">© 2023 GM University, All Rights Reserved</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("sideicon").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("hidden");
+            document.getElementById("sidebar").classList.add("changeopen");
+            document.getElementById("sideicon").style.display = "none";
+        });
+
+        document.getElementById("cross").addEventListener("click", function () {
+            //document.getElementById("sidebar").classList.remove("changeopen");
+            document.getElementById("sidebar").classList.add("changeclose");
+            setTimeout(() => {
+                document.getElementById("sidebar").classList.add("hidden");
+                document.getElementById("sidebar").classList.remove("changeopen");
+                document.getElementById("sidebar").classList.remove("changeclose");
+                document.getElementById("sideicon").style.display = "block";
+                document.body.style.opacity = "1";
+            }, 990);
+
+        });
+    </script>
+</body>
+</html>

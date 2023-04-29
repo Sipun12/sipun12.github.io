@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminar : codeGmu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: linear-gradient(270deg, #7dd6fd, #ffffff);
+            background-size: 400% 400%;
+            -webkit-animation: bganimation 33s ease infinite;
+            -moz-animation: bganimation 33s ease infinite;
+            animation: bganimation 33s ease infinite;
+        }
+
+        @-webkit-keyframes bganimation {
+            0% {
+                background-position: 23% 0%
+            }
+
+            50% {
+                background-position: 78% 100%
+            }
+
+            100% {
+                background-position: 23% 0%
+            }
+        }
+
+        @-moz-keyframes bganimation {
+            0% {
+                background-position: 23% 0%
+            }
+
+            50% {
+                background-position: 78% 100%
+            }
+
+            100% {
+                background-position: 23% 0%
+            }
+        }
+
+        @keyframes bganimation {
+            0% {
+                background-position: 23% 0%
+            }
+
+            50% {
+                background-position: 78% 100%
+            }
+
+            100% {
+                background-position: 23% 0%
+            }
+        }
+        .changeopen {
+            animation: open .7s ease-in-out;
+        }
+
+        @keyframes open {
+            0% {
+                transform: translateX(250px);
+            }
+        }
+
+        .changeclose {
+            animation: close 1s ease-in-out;
+        }
+
+        @keyframes close {
+            100% {
+                transform: translateX(1700px);
+            }
+        }
+
+        .links a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+
+        .contact a::before {
+            content: '\f046';
+            color: orange;
+            padding: 10px 0px;
+        }
+            /* Dropdown */
+    .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  /* background-color: red; */
+  color: #F97316;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F97316;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #16409E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar text-sm text-white bg-[#01305D]">
+        <div class="flex justify-between items-center pt-1 pl-3 md:hidden">
+            <div class="logo flex text-lg">
+                <img src="/images/logo.png" alt="Logo" class="h-7">
+                <div class="font-bold"><a href="index.html">codeGMU</a></div>
+            </div>
+            <div class="bars block lg:hidden float-right pr-3 z-10 md:hidden" name="manu" id="sideicon">
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+                <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            </div>
+        </div>
+        <div class="mainav hidden md:block px-3">
+            <ul class="text-white space-x-10 overflow-hidden px-4 bg-opacity-0 font-bold lg:text-lg">
+                <div class="float-left text-lg font-bold flex justify-center items-center lg:mt-2 lg:ml-12">
+                    <img src="/images/logo.png" alt="logo" class="h-9">
+                    <li class="float-left text-lg font-bold">codeGMU</li>
+
+                </div>
+                <div class="lis py-2 space-x-7">
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
+                        <div class="dropdown">
+                            <button class="dropbtn lg:mt-2">Outreach Activity 
+                              <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content">
+                              <a href="mentormentee.html">Mentor Mentee</a>
+                              <a href="seminar.html">Seminar</a>
+                              <a href="webinar.html">Webinar</a>
+                              <a href="ptm.html">Parent Teacher Meeting</a>
+                            </div>
+                          </div> 
+                    </li>
+                    <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html"> University</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="index.html"> Home</a></li>
+                </div>
+            </ul>
+        </div>
+        <ul class="bg-[#1545B3] font-bold right-1 top-1 w-60 hidden float-right z-40 absolute rounded-md" id="sidebar">
+            <div class="flex justify-between">
+                <li class="text-xs p-2 "><a href="index.html">Home</a></li>
+                <img src="/images/crossicon.png" alt="cross icon" class="h-4 m-2" id="cross">
+            </div>
+            <hr>
+            <li class="text-xs p-2 "><a href="university.html">University</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="faculty.html">Faculty</a></li>
+            <hr>
+            <li class="text-xs p-2 "><a href="alumniregistration.php">Alumni Connect</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+
+        </ul>
+    </nav>
+
+
+    <!-- HEADER SECTION -->
+      <!-- Container for demo purpose -->
+  <div class="container my-24 px-6 mx-auto">
+
+    <!-- Section: Design Block -->
+    <section class="mb-32 text-gray-800 text-center lg:text-left background-radial-gradient">
+
+      <div class="relative overflow-hidden bg-no-repeat bg-cover rounded-lg" style="
+            background-position: 50%;
+            background-image: url('mm.jpg');
+            height: 500px;
+          ">
+        <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.75)">
+          <div class="flex justify-center items-center h-full">
+            <div class="text-center text-white px-6 py-6 md:py-0 md:px-12 max-w-[800px]">
+              <h2 class="text-5xl md:text-6xl xl:text-7xl font-bold tracking-tight leading-tight mb-12">
+                Seminars
+              </h2>
+              <p class="text-lg">
+                A seminar is a form of academic instruction. It has the function of bringing together small groups for recurring meetings, focusing each time on some particular subject, in which everyone present is requested to participate. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- Section: Design Block -->
+    
+  </div>
+  <!-- Container for demo purpose -->
+
+
+    <!-- Container for demo purpose -->
+    <div class="container my-24 px-6 mx-auto">
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800">
+            <!-- Jumbotron -->
+            <div class="container mx-auto xl:px-32 text-center lg:text-left">
+                <div class="grid lg:grid-cols-2 flex items-center">
+                    <div class="mb-12 lg:mb-0">
+                        <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+                            style="background: hsla(210, 100%, 100%, 0.55); backdrop-filter: blur(30px)">
+                            <h2 class="text-3xl font-bold mb-6">Seminar 1</h2>
+                            <p class="text-gray-500 mb-6 pb-2 lg:pb-0">
+                                The first ever seminar was conducted by Dr. Ajaya Kumar Tripathy with his students
+                                On date 37/12/2022.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="gmu2.jpg" class="w-full rounded-lg shadow-lg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100"/>
+
+    <div class="container my-24 px-6 mx-auto">
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800">
+            <!-- Jumbotron -->
+            <div class="container mx-auto xl:px-32 text-center lg:text-left">
+                <div class="grid lg:grid-cols-2 flex items-center">
+                    <div class="mb-12 lg:mb-0">
+                        <div class="block rounded-lg shadow-lg px-6 py-12 md:px-12 lg:-mr-14"
+                            style="background: hsla(210, 100%, 100%, 0.55); backdrop-filter: blur(30px)">
+                            <h2 class="text-3xl font-bold mb-6">Seminar 2</h2>
+                            <p class="text-gray-500 mb-6 pb-2 lg:pb-0">
+                                The first ever seminar was conducted by Dr. Usha Manasi Mohapatra with her students
+                                On date 37/12/2022.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <img src="gmu2.jpg" class="w-full rounded-lg shadow-lg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr class="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:opacity-100" />
+
+
+    <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
+        <div class="foot py-5 px-1">
+            Gangadhar Meher University, Amruta Vihar, Sambalpur, Odisha, Pin- 768004
+        </div>
+        <hr>
+        <div class="flex justify-around">
+            <div class="logo flex my-5 justify-start">
+                <img src="/images/logo.png" alt="Logo" class="h-6 sm:h-10">
+                <div class="font-bold text-base sm:text-2xl">codeGMU</div>
+            </div>
+            <div class="links text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 text-base sm:text-lg pb-5 text-orange-500">QUICK LINKS
+                </h3>
+                <a href="university.html"> University</a><br>
+                <!-- <a href=""> Department</a><br> -->
+                <a href="faculty.html"> Faculty</a><br>
+                <a href="placement.html"> Placement</a><br>
+                <a href="alumniregistration.php"> Alumni Registration</a><br>
+            </div>
+            <div class="contact text-left my-5">
+                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL LINKS
+                </h3>
+                <a href="https://exam.gmuniversity.ac.in/"> Examination Website</a><br>
+                <a href="http://result.gmuniversity.ac.in/"> Result Website</a><br>
+                <a href="https://www.gmuniversity.ac.in"> Official GMU Website</a><br>
+                <a href="mailto: gmuniversitysbp@gmail.com"> Mail to University</a><br>
+            </div>
+        </div>
+        <hr>
+        <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
+            <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
+            <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
+            <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10" src="/images/youtube.png" alt="Youtube icon"></a>
+            <a href="https://twitter.com/gmunivsbp"><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
+        </div>
+        <hr>
+        <div class="protection py-4 ">
+            <a href="">© 2023 GM University, All Rights Reserved</a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById("sideicon").addEventListener("click", function () {
+            document.getElementById("sidebar").classList.remove("hidden");
+            document.getElementById("sidebar").classList.add("changeopen");
+            document.getElementById("sideicon").style.display = "none";
+        });
+
+        document.getElementById("cross").addEventListener("click", function () {
+            //document.getElementById("sidebar").classList.remove("changeopen");
+            document.getElementById("sidebar").classList.add("changeclose");
+            setTimeout(() => {
+                document.getElementById("sidebar").classList.add("hidden");
+                document.getElementById("sidebar").classList.remove("changeopen");
+                document.getElementById("sidebar").classList.remove("changeclose");
+                document.getElementById("sideicon").style.display = "block";
+                document.body.style.opacity = "1";
+            }, 990);
+
+        });
+    </script>
+</body>
+
+</html>

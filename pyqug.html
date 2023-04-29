@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>codeGMU- P.Y.Q 📗</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;500;&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+    body {
+      background-image: radial-gradient(circle 588px at 31.7% 40.2%, rgba(225, 200, 239, 1) 21.4%, rgba(163, 225, 233, 1) 57.1%);
+    }
+
+    #hero {
+      background: rgb(14, 14, 193);
+      background: linear-gradient(0deg, rgba(14, 14, 193, 1) 30%, rgba(78, 171, 255, 1) 100%);
+    }
+
+    @import url("//fonts.googleapis.com/css?family=Roboto:500");
+    @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+
+    .face-button {
+      height: 64px;
+      display: inline-block;
+      border: 3px solid white;
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      text-decoration: none;
+      background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%);
+      overflow: hidden;
+    }
+
+    .face-button .icon {
+      margin-right: 6px;
+    }
+
+    .face-button .face-primary,
+    .face-button .face-secondary {
+      display: block;
+      padding: 0 32px;
+      line-height: 64px;
+      transition: margin 0.4s;
+    }
+
+    .face-button .face-primary {
+      background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%);
+      color: #fff;
+    }
+
+    .face-button:hover .face-primary {
+      margin-top: -64px;
+    }
+    .links a::before {
+        content: '\f046';
+        color: orange;
+        padding: 10px 0px;
+    }
+
+    .contact a::before {
+        content: '\f046';
+        color: orange;
+        padding: 10px 0px;
+    }
+    .changeopen {
+            animation: open .7s ease-in-out;
+        }
+
+        @keyframes open {
+            0% {
+                transform: translateX(250px);
+            }
+        }
+
+        .changeclose {
+            animation: close 1s ease-in-out;
+        }
+
+        @keyframes close {
+            100% {
+                transform: translateX(1700px);
+            }
+        }
+
+    /* Dropdown */
+    .dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 18px;  
+  border: none;
+  outline: none;
+  color: white;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+ .dropdown:hover .dropbtn {
+  /* background-color: red; */
+  color: #F97316;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F97316;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #16409E;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar text-sm text-white bg-[#4A9FFB]">
+    <div class="flex justify-between items-center pt-1 pl-3 md:hidden">
+        <div class="logo flex text-lg">
+            <img src="/images/logo.png" alt="Logo" class="h-7">
+            <div class="font-bold">codeGMU</div>
+        </div>
+        <div class="bars block lg:hidden float-right pr-3 z-10 md:hidden" name="manu" id="sideicon">
+            <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+            <div class="bar h-0.5 w-5 bg-white mt-1"></div>
+        </div>
+    </div>
+    <div class="mainav hidden md:block px-3">
+        <ul class="text-white space-x-10 overflow-hidden px-4 bg-opacity-0 font-bold lg:text-lg">
+            <div class="float-left text-lg font-bold flex justify-center items-center lg:mt-2 lg:ml-12">
+                <img src="/images/logo.png" alt="logo" class="h-9">
+                <li class="float-left text-lg font-bold">codeGMU</li>
+
+            </div>
+            <div class="lis py-2 space-x-7">
+                <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
+                <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
+                <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
+                    <div class="dropdown">
+                        <button class="dropbtn lg:mt-2">Outreach Activity 
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="mentormentee.html">Mentor Mentee</a>
+                          <a href="seminar.html">Seminar</a>
+                          <a href="webinar.html">Webinar</a>
+                          <a href="ptm.html">Parent Teacher Meeting</a>
+                        </div>
+                      </div> 
+                </li>
+                <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
+                <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
+                <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html"> University</a></li>
+            </div>
+        </ul>
+    </div>
+    <ul class="bg-[#1545B3] font-bold right-1 top-1 w-60 hidden float-right z-40 absolute rounded-md" id="sidebar">
+      <div class="flex justify-between">
+          <li class="text-xs p-2 "><a href="index.html">Home</a></li>
+          <img src="/images/crossicon.png" alt="cross icon" class="h-4 m-2" id="cross">
+      </div>
+      <hr>
+      <li class="text-xs p-2 "><a href="university.html">University</a></li>
+      <hr>
+      <li class="text-xs p-2 "><a href="faculty.html">Faculty</a></li>
+      <hr>
+      <li class="text-xs p-2 "><a href="alumniregistration.php">Alumni Connect</a></li>
+      <hr>
+      <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
+      <hr>
+      <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+
+  </ul>
+</nav>
+
+  <!-- hero -->
+  <section class="text-gray-400 bg-black body-font rounded-b-3xl" id="hero">
+    <div class="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-3/6 md:mb-0 mb-10">
+        <!-- <video src="bookshelf-4894833-4138933.webm" autoplay muted loop></video> -->
+        <img src="bookshelf-4894833-4138933-unscreen.gif" alt="Bookshelf">
+      </div>
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <h1 class="title-font sm:text-4xl text-2xl mb-4 font-medium text-white">Welcome to the P.Y.Qs Section Of
+          Computer Science Department , GMU
+        </h1>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <!-- UG 1st sem -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 1st Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="c-programming.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-1</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Programming Using C</h2>
+            <p class="leading-relaxed text-base">C is a general-purpose programming language created by Dennis Ritchie
+              at the Bell Laboratories in 1972. It is a very popular language.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="digital-logic.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-2</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Digital Logic</h2>
+            <p class="leading-relaxed text-base">Digital logic is the manipulation of binary values that uses circuits
+              and
+              logic gates to construct the implementation of computer operations.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- UG 2nd sem -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 2nd Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="c++ logo.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-3</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Programming using C++</h2>
+            <p class="leading-relaxed text-base">C++ is an object-oriented programming language which gives a clear
+              structure to programs and allows code to be reused, lowering development costs. </p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="data-structure2.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-4</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Structures</h2>
+            <p class="leading-relaxed text-base">A data structure is a storage that is used to store and organize data.
+              It is a way of arranging data on a computer so that it can be accessed and updated efficiently.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UG 3rd Sem -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 3rd Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="java.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-5</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Java Programming</h2>
+            <p class="leading-relaxed text-base">Java is a popular programming language.
+              Java is used to develop mobile apps, web apps, desktop apps, games and much more.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="database.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-6</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Database Systems</h2>
+            <p class="leading-relaxed text-base"> A DBMS serves as an interface between the database and its end users
+              or programs, allowing users to retrieve, update, and manage how the information.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="dsc-mths.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-7</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Discrete Mathematical Structures</h2>
+            <p class="leading-relaxed text-base">Discrete mathematics is the branch of mathematics dealing with objects
+              that can consider only distinct,separated values. This includes concepts of Sets, Relations</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UG 4TH SEM -->
+
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 4th Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="os.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-8</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Operating Systems</h2>
+            <p class="leading-relaxed text-base">An operating system (OS) is the program that, after being initially
+              loaded into the computer by a boot program, manages all of the other application programs in a computer.
+            </p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="cn.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-9</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Computer Networks</h2>
+            <p class="leading-relaxed text-base">Computer networking is the practice of connecting computers together to
+              enable communication and data exchange between them. It includes protocols, topology, OSI layers etc.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="cg.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-10</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Computer Graphics</h2>
+            <p class="leading-relaxed text-base">Computer graphics deals with generating images and art with the aid of
+              computers. Today, computer graphics is a core technology in digital photography, film, video games, etc.
+            </p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UG 5TH SEM -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 5th Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="wt.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-11</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Web technology</h2>
+            <p class="leading-relaxed text-base">FWeb Technology refers to the various tools and techniques that are
+              utilized in the process of communication between different types of devices over the internet.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="se.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-12</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Software Engineering</h2>
+            <p class="leading-relaxed text-base">Software engineering is the process of developing, testing and
+              deploying computer applications to solve real-world problems by adhering to a set of engineering
+              principles and best practices.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="nt.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">DSE-1</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Numerical Techniques</h2>
+            <p class="leading-relaxed text-base">
+              At the heart of computational modelling are the mathematical equations that describe the physical
+              processes taking place during manufacture and influence the product when it is in service.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="unix.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">DSE-2</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Unix Shell Programming</h2>
+            <p class="leading-relaxed text-base">A Unix shell is a command-line interpreter or shell that provides a
+              command line user interface for Unix-like operating systems. The shell is both an interactive and
+              scripting language.</p>
+            <div class="text-center pt-4">
+              <a class="face-button" href="#">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 52 kb</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UG 6TH SEM -->
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-wrap w-full mb-5">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">UG 6th Semester Previous Year
+            Questions</h1>
+          <div class="h-1 w-20 bg-blue-700 rounded"></div>
+        </div>
+      </div>
+      <div class="flex flex-wrap -m-4">
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="ai.jpg" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-13</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Artificial Intelligence</h2>
+            <p class="leading-relaxed text-base">Artificial intelligence is the simulation of human intelligence
+              processes by machines, especially computer systems. Specific applications of AI include expert systems,
+              natural language processing, speech recognisation etc. </p>
+            <div class="text-center pt-4">
+              <a class="face-button"
+                href="https://drive.google.com/uc?export=download&id=1Q6WqJ08IV3n2UmToLH3YHya0C1m6BY6g">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 2.4 MB</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="ada.png
+              " alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">CORE COURSE-14</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Algorithm Design Techniques</h2>
+            <p class="leading-relaxed text-base">An algorithm design technique means a unique approach or mathematical
+              method for creating algorithms and solving problems. While multiple algorithms can solve a problem, not
+              all algorithms can solve it. </p>
+            <div class="text-center pt-4">
+              <a class="face-button"
+                href="https://drive.google.com/uc?export=download&id=12OW2GWA28iSCZjnODjGGk0FZC_vxDdG2">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 2.2 MB</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div class="bg-gray-100 p-6 rounded-lg">
+            <img class="h-40 rounded w-full object-cover object-center mb-6" src="ds.png" alt="content">
+            <h3 class="tracking-widest text-green-500 text-xs font-medium title-font">DSE-3</h3>
+            <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Data Science</h2>
+            <p class="leading-relaxed text-base">Data science is the study of data to extract meaningful insights for
+              business. It is a multidisciplinary approach that combines principles and practices from the fields of
+              mathematics, statistics, artificial intelligence</p>
+            <div class="text-center pt-4">
+              <a class="face-button"
+                href="https://drive.google.com/uc?export=download&id=1XYbELgd8MDddaiWzRuGHZ8FEkcGGjEm7">
+                <div class="face-primary">
+                  <span class="icon fa fa-cloud"></span>
+                  Download Now
+                </div>
+                <div class="face-secondary">
+                  <span class="text-white">Size: 2.5 MB</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
+    <div class="foot py-5 px-1">
+        Gangadhar Meher University, Amruta Vihar, Sambalpur, Odisha, Pin- 768004
+    </div>
+    <hr>
+    <div class="flex justify-around">
+        <div class="logo flex my-5 justify-start">
+            <img src="/images/logo.png" alt="Logo" class="h-6 sm:h-10">
+            <div class="font-bold text-base sm:text-2xl">codeGMU</div>
+        </div>
+        <div class="links text-left my-5">
+            <h3 class="font-bold underline underline-offset-8 text-base sm:text-lg pb-5 text-orange-500">QUICK LINKS
+            </h3>
+            <a href="university.html"> University</a><br>
+            <!-- <a href=""> Department</a><br> -->
+            <a href="faculty.html"> Faculty</a><br>
+            <a href="placement.html"> Placement</a><br>
+            <a href="alumniregistration.php"> Alumni Registration</a><br>
+        </div>
+        <div class="contact text-left my-5">
+            <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL LINKS
+            </h3>
+            <a href="https://exam.gmuniversity.ac.in/"> Examination Website</a><br>
+            <a href="http://result.gmuniversity.ac.in/"> Result Website</a><br>
+            <a href="https://www.gmuniversity.ac.in"> Official GMU Website</a><br>
+            <a href="mailto: gmuniversitysbp@gmail.com"> Mail to University</a><br>
+        </div>
+    </div>
+    <hr>
+    <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
+        <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
+        <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
+        <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10" src="/images/youtube.png" alt="Youtube icon"></a>
+        <a href="https://twitter.com/gmunivsbp"><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
+    </div>
+    <hr>
+    <div class="protection py-4 ">
+        <a href="">© 2023 GM University, All Rights Reserved</a>
+    </div>
+</footer>
+<script>
+    document.getElementById("sideicon").addEventListener("click", function () {
+        document.getElementById("sidebar").classList.remove("hidden");
+        document.getElementById("sidebar").classList.add("changeopen");
+        document.getElementById("sideicon").style.display = "none";
+    });
+
+    document.getElementById("cross").addEventListener("click", function () {
+        //document.getElementById("sidebar").classList.remove("changeopen");
+        document.getElementById("sidebar").classList.add("changeclose");
+        setTimeout(() => {
+            document.getElementById("sidebar").classList.add("hidden");
+            document.getElementById("sidebar").classList.remove("changeopen");
+            document.getElementById("sidebar").classList.remove("changeclose");
+            document.getElementById("sideicon").style.display = "block";
+            document.body.style.opacity = "1";
+        }, 990);
+
+    });
+</script>
+
+</body>
+
+</html>

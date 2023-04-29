@@ -1,0 +1,30 @@
+.custom-shape-divider-bottom-1679298408 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1679298408 svg {
+    position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1679298408 .shape-fill {
+    fill: #FFFFFF;
+}
+.hero{
+    background-color: dodgerblue;
+}
+
+#blue{
+    background-color: blue;
+    height: 400px;
+    width: 100% 20vh;
+}
+
