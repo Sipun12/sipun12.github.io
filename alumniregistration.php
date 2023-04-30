@@ -92,7 +92,7 @@ if (mysqli_connect_errno())
 }
 
 .dropdown .dropbtn {
-  font-size: 18px;  
+  font-size: 17px;  
   border: none;
   outline: none;
   color: white;
@@ -209,6 +209,14 @@ if (mysqli_connect_errno())
             <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
             <hr>
             <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="mentormentee.html">Mentor Mentee</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="seminar.html">Seminars</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="webinar.html">Webinars</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="ptm.html">Parent Teacher Meetings</a></li>
 
         </ul>
     </nav>

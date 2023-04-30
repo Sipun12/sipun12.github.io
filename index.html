@@ -83,51 +83,51 @@
 
     /* Dropdown */
     .dropdown {
-  float: right;
-  overflow: hidden;
-}
+        float: right;
+        overflow: hidden;
+    }
 
-.dropdown .dropbtn {
-  font-size: 18px;  
-  border: none;
-  outline: none;
-  color: white;
-  /* padding: 14px 16px; */
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+    .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: white;
+        /* padding: 14px 16px; */
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
 
- .dropdown:hover .dropbtn {
-  /* background-color: red; */
-  color: #F97316;
-}
+    .dropdown:hover .dropbtn {
+        /* background-color: red; */
+        color: #F97316;
+    }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F97316;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F97316;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
 
-.dropdown-content a {
-  float: none;
-  color:white;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
+    .dropdown-content a {
+        float: none;
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
 
-.dropdown-content a:hover {
-  background-color: #16409E;
-}
+    .dropdown-content a:hover {
+        background-color: #16409E;
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 </style>
 
 <body>
@@ -154,26 +154,31 @@
 
                 </div>
                 <div class="lis py-2 space-x-7">
-                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html"> Placement</a></li>
-                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="alumniregistration.php"> Alumni Connect</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-5"><a href="placement.html">
+                            Placement</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a
+                            href="alumniregistration.php"> Alumni Connect</a></li>
                     <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="outreachactivity.html"> Outreach Activity</a></li> -->
                     <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2">
                         <div class="dropdown">
-                            <button class="dropbtn lg:mt-2">Outreach Activity 
-                              <i class="fa fa-caret-down"></i>
+                            <button class="dropbtn lg:mt-2 lg:text-lg">Outreach Activity
+                                <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                              <a href="mentormentee.html">Mentor Mentee</a>
-                              <a href="seminar.html">Seminar</a>
-                              <a href="webinar.html">Webinar</a>
-                              <a href="ptm.html">Parent Teacher Meeting</a>
+                                <a href="mentormentee.html">Mentor Mentee</a>
+                                <a href="seminar.html">Seminar</a>
+                                <a href="webinar.html">Webinar</a>
+                                <a href="ptm.html">Parent Teacher Meeting</a>
                             </div>
-                          </div> 
+                        </div>
                     </li>
                     <!-- <li class="float-right hover:cursor-pointer hover:text-orange-500"><a href="studentcorner.html"> Student Corner</a></li> -->
-                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html"> Faculty</a></li>
-                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html"> University</a></li>
-                    <li class="float-right hover:cursor-pointer text-orange-500 px-2"><a href="index.html"> Home</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="faculty.html">
+                            Faculty</a></li>
+                    <li class="float-right hover:cursor-pointer hover:text-orange-500 px-2"><a href="university.html">
+                            University</a></li>
+                    <li class="float-right hover:cursor-pointer text-orange-500 px-2"><a href="index.html"> Home</a>
+                    </li>
                 </div>
             </ul>
         </div>
@@ -192,6 +197,14 @@
             <li class="text-xs p-2 text-white"><a href="placement.html">Placement</a></li>
             <hr>
             <li class="text-xs p-2 text-white"><a href="studentcorner.html">Student Corner</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="mentormentee.html">Mentor Mentee</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="seminar.html">Seminars</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="webinar.html">Webinars</a></li>
+            <hr>
+            <li class="text-xs p-2 text-white"><a href="ptm.html">Parent Teacher Meetings</a></li>
 
         </ul>
     </nav>
@@ -200,11 +213,12 @@
         class="firstcontainer flex flex-col-reverse justify-center items-center px-2 sm:px-4 md:flex-row lg:mt-5 lg:mb-40">
         <div class="firstleft pt-4 text-left md:w-2/3 md:text-white lg:ml-16">
             <h1 class="font-bold text-lg sm:text-2xl md:-mt-7 lg:mt-0 lg:text-4xl">Welcome to <span
-                    class="text-orange-500">codeGmu</span><br><br>  The website of <span class="text-orange-500">Computer Science</span> department of Gangadhar Meher University,Sambalpur</h1>
-            
-            <!-- <button
-                class="btn text-sm mt-4 text-white rounded-md p-2 bg-orange-500 hover:bg-orange-400 font-bold lg:mt-6 lg:p-3 lg:text-base">Get
-                Started</button> -->
+                    class="text-orange-500">codeGmu</span><br>The website of Department <span class="text-orange-500">Computer
+                    Science</span></h1><br>
+                    <p>Hey Students,This website is for student of Computer Science department of Gangadhar Meher University,Sambalpur to help them in their curricular.</p>
+
+           <a href="#start"> <button class="btn text-sm mt-4 text-white rounded-md p-2 bg-orange-500 hover:bg-orange-400 font-bold lg:mt-6 lg:p-3 lg:text-base">Get
+                Started</button></a>
         </div>
         <div class="firstright flex justify-center items-center lg:pr-20">
             <img src="/images/smallback2.gif" alt="firstillustration" class="h-44 sm:h-72 md:h-80 lg:h-96">
@@ -212,7 +226,7 @@
     </div>
 
     <main>
-        <div class="heading py-6 text-center md:pt-32 lg:mt-32">
+        <div  id="start"  class="heading py-6 text-center md:pt-32 lg:mt-32">
             <h1 class="font-bold text-orange-500 lg:text-2xl">For Students</h1>
             <h2 class="lg:text-xl">Are you looking for PYQs, Syllabus, Lesson Plans, Placements ?</h2>
         </div>
@@ -250,12 +264,12 @@
             </div>
             <div class="secondright1 h-[200px] p-2 lg:rounded-br-full lg:rounded-bl-full lg:pt-5">
                 <div class="text-center">
-                    <h1 class="font-bold text-lg lg:text-2xl"><span
-                            class="text-yellow-500">Research </span>Section
+                    <h1 class="font-bold text-lg lg:text-2xl"><span class="text-yellow-500">Research </span>Section
                     </h1>
-                    <p class="text-md">Find all the Research and Publications of Faculties of Computer Sciece Department
+                    <p class="text-md">Here you can find all the Research and Publications of Faculties of Computer Science Department
                     </p>
-                    <button class="bg-[#F97316] rounded-3xl text-white m-2 p-2 font-bold"><a href="research.html">See Details --></a></button>
+                    <button class="bg-[#F97316] rounded-3xl text-white m-2 p-2 font-bold"><a href="research.html">See
+                            Details --></a></button>
                 </div>
 
             </div>
@@ -267,16 +281,182 @@
             </div>
             <div class="secondright1 h-[200px] rounded-bl-full rounded-br-full p-2 lg:rounded-bl-full lg:pt-5">
                 <div class="text-center px-5">
-                    <h1 class="font-bold text-lg lg:text-2xl"><span
-                            class="text-yellow-500">Student Corner</span>
+                    <h1 class="font-bold text-lg lg:text-2xl"><span class="text-yellow-500">Student Corner</span>
                     </h1>
-                    <p class="text-md">Check out to know what's going in the department.
+                    <p class="text-md">Here you can see the Events like Sports, Quiz , etc. related to department and also the winner of events.
                     </p>
-                    <button class="bg-[#F97316] rounded-3xl text-white m-2 p-2 font-bold"><a href="studentcorner.html"> Check out --> </a></button>
+                    <button class="bg-[#F97316] rounded-3xl text-white m-2 p-2 font-bold"><a href="studentcorner.html">
+                            Check out --> </a></button>
                 </div>
             </div>
         </div>
     </main>
+
+    <!-- Container for demo purpose -->
+    <div class="container my-24 px-6 mx-auto">
+
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800 text-center">
+            <u><h2 class="text-3xl font-bold mb-12">Meet the <span class="text-orange-500">Developers</span></h2></u>
+
+            <!-- <div class="grid md:grid-cols-2 gap-x-32 lg:gap-x-12"> -->
+            <div class="flex  flex-col lg:flex-row ">
+                <div class="mb-6 lg:mb-0 lg:ml-60">
+                    <div class="bg-white  rounded-lg shadow-lg">
+                        <div class="relative block overflow-hidden bg-no-repeat bg-cover">
+                            <img src="sipun3.jpg" class="w-full rounded-t-lg" />
+                            <a href="#">
+                                <div
+                                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
+                                </div>
+                            </a>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                                style="left: 0; bottom: 0">
+                                <path fill="#fff"
+                                    d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Sipun Meher</h5>
+                            <p class="text-gray-500 mb-4">Frontend & Backend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="https://www.instagram.com/sipun_meher/" class="px-2">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        height="18" width="15" viewBox="-19.5036 -32.49725 169.0312 194.9835">
+                                        <defs>
+                                            <radialGradient fy="578.088" fx="158.429"
+                                                gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)"
+                                                gradientUnits="userSpaceOnUse" xlink:href="#a" r="65" cy="578.088"
+                                                cx="158.429" id="c" />
+                                            <radialGradient fy="473.455" fx="147.694"
+                                                gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)"
+                                                gradientUnits="userSpaceOnUse" xlink:href="#b" r="65" cy="473.455"
+                                                cx="147.694" id="d" />
+                                            <linearGradient id="b">
+                                                <stop stop-color="#3771c8" offset="0" />
+                                                <stop offset=".128" stop-color="#3771c8" />
+                                                <stop stop-opacity="0" stop-color="#60f" offset="1" />
+                                            </linearGradient>
+                                            <linearGradient id="a">
+                                                <stop stop-color="#fd5" offset="0" />
+                                                <stop stop-color="#fd5" offset=".1" />
+                                                <stop stop-color="#ff543e" offset=".5" />
+                                                <stop stop-color="#c837ab" offset="1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                                            fill="url(#c)" />
+                                        <path
+                                            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                                            fill="url(#d)" />
+                                        <path
+                                            d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"
+                                            fill="#fff" />
+                                    </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        class="w-4 h-4 text-blue-600">
+                                        <path fill="currentColor"
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/sipun-meher-45b324251/" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                        class="w-4 h-4 text-blue-600">
+                                        <path fill="currentColor"
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                    </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-6 lg:mb-0 lg:ml-[300px]">
+                    <div class="bg-white block rounded-lg shadow-lg">
+                        <div class="relative overflow-hidden bg-no-repeat bg-cover">
+                            <img src="akash2.jpg" class="w-full rounded-t-lg" />
+                            <a href="#!">
+                                <div
+                                    class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed">
+                                </div>
+                            </a>
+                            <svg class="absolute" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"
+                                style="left: 0; bottom: 0">
+                                <path fill="#fff"
+                                    d="M0,96L48,128C96,160,192,224,288,240C384,256,480,224,576,213.3C672,203,768,213,864,202.7C960,192,1056,160,1152,128C1248,96,1344,64,1392,48L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="p-6">
+                            <h5 class="text-lg font-bold mb-4">Rukmana Behera</h5>
+                            <p class="text-gray-500 mb-4">Frontend & Backend Developer</p>
+                            <ul class="list-inside flex mx-auto justify-center">
+                                <a href="https://www.instagram.com/akashbehera_805/" class="px-2">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        height="18" width="15" viewBox="-19.5036 -32.49725 169.0312 194.9835">
+                                        <defs>
+                                            <radialGradient fy="578.088" fx="158.429"
+                                                gradientTransform="matrix(0 -1.98198 1.8439 0 -1031.399 454.004)"
+                                                gradientUnits="userSpaceOnUse" xlink:href="#a" r="65" cy="578.088"
+                                                cx="158.429" id="c" />
+                                            <radialGradient fy="473.455" fx="147.694"
+                                                gradientTransform="matrix(.17394 .86872 -3.5818 .71718 1648.351 -458.493)"
+                                                gradientUnits="userSpaceOnUse" xlink:href="#b" r="65" cy="473.455"
+                                                cx="147.694" id="d" />
+                                            <linearGradient id="b">
+                                                <stop stop-color="#3771c8" offset="0" />
+                                                <stop offset=".128" stop-color="#3771c8" />
+                                                <stop stop-opacity="0" stop-color="#60f" offset="1" />
+                                            </linearGradient>
+                                            <linearGradient id="a">
+                                                <stop stop-color="#fd5" offset="0" />
+                                                <stop stop-color="#fd5" offset=".1" />
+                                                <stop stop-color="#ff543e" offset=".5" />
+                                                <stop stop-color="#c837ab" offset="1" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                                            fill="url(#c)" />
+                                        <path
+                                            d="M65.033 0C37.891 0 29.953.028 28.41.156c-5.57.463-9.036 1.34-12.812 3.22-2.91 1.445-5.205 3.12-7.47 5.468-4.125 4.282-6.625 9.55-7.53 15.812-.44 3.04-.568 3.66-.594 19.188-.01 5.176 0 11.988 0 21.125 0 27.12.03 35.05.16 36.59.45 5.42 1.3 8.83 3.1 12.56 3.44 7.14 10.01 12.5 17.75 14.5 2.68.69 5.64 1.07 9.44 1.25 1.61.07 18.02.12 34.44.12 16.42 0 32.84-.02 34.41-.1 4.4-.207 6.955-.55 9.78-1.28a27.22 27.22 0 0017.75-14.53c1.765-3.64 2.66-7.18 3.065-12.317.088-1.12.125-18.977.125-36.81 0-17.836-.04-35.66-.128-36.78-.41-5.22-1.305-8.73-3.127-12.44-1.495-3.037-3.155-5.305-5.565-7.624-4.3-4.108-9.56-6.608-15.829-7.512C102.338.157 101.733.027 86.193 0z"
+                                            fill="url(#d)" />
+                                        <path
+                                            d="M65.003 17c-13.036 0-14.672.057-19.792.29-5.11.234-8.598 1.043-11.65 2.23-3.157 1.226-5.835 2.866-8.503 5.535-2.67 2.668-4.31 5.346-5.54 8.502-1.19 3.053-2 6.542-2.23 11.65C17.06 50.327 17 51.964 17 65s.058 14.667.29 19.787c.235 5.11 1.044 8.598 2.23 11.65 1.227 3.157 2.867 5.835 5.536 8.503 2.667 2.67 5.345 4.314 8.5 5.54 3.054 1.187 6.543 1.996 11.652 2.23 5.12.233 6.755.29 19.79.29 13.037 0 14.668-.057 19.788-.29 5.11-.234 8.602-1.043 11.656-2.23 3.156-1.226 5.83-2.87 8.497-5.54 2.67-2.668 4.31-5.346 5.54-8.502 1.18-3.053 1.99-6.542 2.23-11.65.23-5.12.29-6.752.29-19.788 0-13.036-.06-14.672-.29-19.792-.24-5.11-1.05-8.598-2.23-11.65-1.23-3.157-2.87-5.835-5.54-8.503-2.67-2.67-5.34-4.31-8.5-5.535-3.06-1.187-6.55-1.996-11.66-2.23-5.12-.233-6.75-.29-19.79-.29zm-4.306 8.65c1.278-.002 2.704 0 4.306 0 12.816 0 14.335.046 19.396.276 4.68.214 7.22.996 8.912 1.653 2.24.87 3.837 1.91 5.516 3.59 1.68 1.68 2.72 3.28 3.592 5.52.657 1.69 1.44 4.23 1.653 8.91.23 5.06.28 6.58.28 19.39s-.05 14.33-.28 19.39c-.214 4.68-.996 7.22-1.653 8.91-.87 2.24-1.912 3.835-3.592 5.514-1.68 1.68-3.275 2.72-5.516 3.59-1.69.66-4.232 1.44-8.912 1.654-5.06.23-6.58.28-19.396.28-12.817 0-14.336-.05-19.396-.28-4.68-.216-7.22-.998-8.913-1.655-2.24-.87-3.84-1.91-5.52-3.59-1.68-1.68-2.72-3.276-3.592-5.517-.657-1.69-1.44-4.23-1.653-8.91-.23-5.06-.276-6.58-.276-19.398s.046-14.33.276-19.39c.214-4.68.996-7.22 1.653-8.912.87-2.24 1.912-3.84 3.592-5.52 1.68-1.68 3.28-2.72 5.52-3.592 1.692-.66 4.233-1.44 8.913-1.655 4.428-.2 6.144-.26 15.09-.27zm29.928 7.97a5.76 5.76 0 105.76 5.758c0-3.18-2.58-5.76-5.76-5.76zm-25.622 6.73c-13.613 0-24.65 11.037-24.65 24.65 0 13.613 11.037 24.645 24.65 24.645C78.616 89.645 89.65 78.613 89.65 65S78.615 40.35 65.002 40.35zm0 8.65c8.836 0 16 7.163 16 16 0 8.836-7.164 16-16 16-8.837 0-16-7.164-16-16 0-8.837 7.163-16 16-16z"
+                                            fill="#fff" />
+                                    </svg>
+                                </a>
+                                <a href="#!" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                        class="w-4 h-4 text-blue-600">
+                                        <path fill="currentColor"
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/rukmana-behera-919b68208/" class="px-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                                        class="w-4 h-4 text-blue-600">
+                                        <path fill="currentColor"
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                    </svg>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <!-- Section: Design Block -->
+
+    </div>
+    <!-- Container for demo purpose -->
 
     <footer class="h-[410px] mt-5 bg-[#01305d] md:px-36 text-white text-center">
         <div class="foot py-5 px-1">
@@ -298,7 +478,8 @@
                 <a href="alumniregistration.php"> Alumni Registration</a><br>
             </div>
             <div class="contact text-left my-5">
-                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL LINKS
+                <h3 class="font-bold underline underline-offset-8 pb-5 text-base sm:text-lg text-orange-500">USEFUL
+                    LINKS
                 </h3>
                 <a href="https://exam.gmuniversity.ac.in/"> Examination Website</a><br>
                 <a href="http://result.gmuniversity.ac.in/"> Result Website</a><br>
@@ -308,9 +489,12 @@
         </div>
         <hr>
         <div class="flex justify-center my-3 space-x-4 sm:space-x-6 md:space-x-12 lg:space-x-32">
-            <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png" alt="facebook icon"></a>
-            <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png" alt="instagram icon"></a>
-            <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10" src="/images/youtube.png" alt="Youtube icon"></a>
+            <a href="https://www.facebook.com/gmunivsbp"><img class="h-10" src="/images/facebook.png"
+                    alt="facebook icon"></a>
+            <a href="https://www.instagram.com/gmunivsbp/"><img class="h-10" src="/images/instagram.png"
+                    alt="instagram icon"></a>
+            <a href="https://www.youtube.com/channel/UCGlhFlVEvPTcTdc_ipcvKqA"><img class="h-10"
+                    src="/images/youtube.png" alt="Youtube icon"></a>
             <a href="https://twitter.com/gmunivsbp"><img class="h-10" src="/images/twitter.png" alt="twitter icon"></a>
         </div>
         <hr>
