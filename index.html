@@ -23,6 +23,12 @@
         /* background-position: center; */
         /* background-size: cover; */
     }
+    .coding,
+        .below {
+            background: linear-gradient(to right,
+                    #5F72BE 0%,
+                    #9921E8 100%);
+        }
 
     .box {
         background: linear-gradient(to right,
@@ -226,14 +232,14 @@
     </div>
 
     <main>
-        <div  id="start"  class="heading py-6 text-center md:pt-32 lg:mt-32">
+        <div  id="start"  class="heading py-6 text-center md:pt-32 lg:pt-5">
             <h1 class="font-bold text-orange-500 lg:text-2xl">For Students</h1>
             <h2 class="lg:text-xl">Are you looking for PYQs, Syllabus, Lesson Plans, Placements ?</h2>
         </div>
 
         <div class="md:flex justify-center items-center">
             <div
-                class="content flex flex-col justify-center items-center mt-2 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:px-3 lg:flex lg:flex-row lg:mb-5">
+                class="content flex flex-col justify-center items-center mt-2 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:px-3 lg:flex lg:flex-row lg:space-x-10 lg:mb-5">
 
                 <div
                     class="box h-52 w-72 rounded-md m-2 flex flex-col justify-center items-center hover:scale-110 lg:w-52">
@@ -258,7 +264,7 @@
             </div>
         </div>
 
-        <div class="secondcontainer1 flex flex-col my-2 text-white">
+        <div class="secondcontainer1 flex flex-col my-2 text-white lg:hidden">
             <div class="secondleft1 rounded-tl-full flex justify-center items-center rounded-tr-full h-[200px]">
                 <img src="/images/girl coding.gif" alt="Girl Coder" class="h-52 lg:h-60">
             </div>
@@ -274,7 +280,7 @@
 
             </div>
         </div>
-        <div class="secondcontainer2 flex flex-col text-white text-center">
+        <div class="secondcontainer2 flex flex-col text-white text-center lg:hidden">
             <div
                 class="secondleft1 h-[200px] flex justify-center items-center overflow-hidden lg:rounded-tl-full lg:rounded-tr-full">
                 <img src="/images/codegirl2.gif" alt="Girl Coder" class="h-52 lg:h-60 pt-2">
@@ -287,6 +293,40 @@
                     </p>
                     <button class="bg-[#F97316] rounded-3xl text-white m-2 p-2 font-bold"><a href="studentcorner.html">
                             Check out --> </a></button>
+                </div>
+            </div>
+        </div>
+        <div class="secon text-white hidden lg:block">
+            <div class="coding flex mt-8 h-[350px] rounded-br-full rounded-tl-full">
+                <div class="codleft flex justify-center items-center w-1/2">
+                    <img src="/images/girl coding.gif" alt="Girl Coder" class="">
+                </div>
+                <div class="codright flex items-center w-[40%]">
+                    <div class="text-left">
+                        <h1 class="font-bold text-lg lg:text-3xl">Welcome to <span
+                            class="text-yellow-500">Research</span>
+                        Section of <span class="text-yellow-500">Computer Science</span>
+                        </h1>
+                        <p class="">Hay Students, Here you can able to find all the Research, Publication, Project and Patents of Computer Science Deartment of GMU
+                        </p><br>
+                        <a href="research.html"><button class="bg-pink-600 hover:bg-pink-500 text-lg rounded-3xl text-white p-3 font-bold">See Details --></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="below flex rounded-bl-full rounded-tr-full h-[350px]">
+                <div class="below1 flex ml-40 items-center w-[40%]">
+                    <div class="text-left">
+                        <h1 class="font-bold text-lg lg:text-3xl">Welcome to <span
+                            class="text-yellow-500">Student Corner</span>
+                        Section of <span class="text-yellow-500">Computer Science</span>
+                        </h1>
+                        <p class="">Hay Students, Here you can able to see all the events like Sports, Quiz related to department and also the winner of events.
+                        </p><br>
+                        <a href="studentcorner.html"><button class="bg-pink-600 hover:bg-pink-500 text-lg rounded-3xl text-white p-3 font-bold">See Details --></button></a>
+                    </div>
+                </div>
+                <div class="codleft flex justify-center items-center w-1/2">
+                    <img src="/images/codegirl2.gif" alt="Girl Coder" class="h-80">
                 </div>
             </div>
         </div>
